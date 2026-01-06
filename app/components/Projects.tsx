@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 
-const ProjectCard = ({ title, description, tags, reverse }) => {
+const ProjectCard = ({ title, description, tags, reverse }:{title:string,description:string,tags:string[],reverse?:boolean}) => {
   return (
     <motion.div
       className={`w-full h-full flex flex-col md:flex-row gap-6 ${

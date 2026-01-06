@@ -22,6 +22,7 @@ const About = () => {
       <motion.h1 className="w-full text-[15vw] font-extrabold text-center leading-none">
         {text.split("").map((char) => (
           <motion.span
+          key={char}
             initial={{}}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
             whileHover={{ scale: 1.25, y: -10 }}
